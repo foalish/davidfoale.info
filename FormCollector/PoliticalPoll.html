@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+    <TITLE>Political Poll</TITLE>
+    <META http-equiv=Content-Type content="text/html; charset=utf-8">
+    <link href="styles.css" rel="stylesheet" type="text/css">  
+<script type="text/javascript"> 
+function validateForm(){
+  return true;
+};             
+</script>
+  </HEAD> 
+  <BODY>
+      <div class="backgroundimage" >
+      <div id="main-content" class="main-content" >
+    <h1>Politics</h1>
+      <form action="receiver.php" method = "POST" onsubmit='return validateForm()' />
+        <input type="hidden" name="formID" value="PoliticalPoll" />
+        <input type="hidden" name="successredirecturl" value="Success.html">
+        <input type="hidden" name="rejectredirecturl" value="Fail.html">
+        <p>Gender: 
+          <select name="GENDER" required>
+            <option value="">Please Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other" >Other</option>
+          </select>
+        </p>
+        <p>Age:  <input type="number" name="AGE" min="
+        
+        0" max="110"  required/></p>
+        <p>How often do you vote:  
+          <select name="VOTE_FREQ" required>
+            <option value="">Please Select</option>
+            <option value="Always">Always</option>
+            <option value="Sometimes">Sometimes</option>
+            <option value="Never" >Never</option>
+          </select>
+        </p>
+        <p>Political Party:  
+          <select name="PARTY" required>
+            <option value="">Please Select</option>
+            <option value="May's Conservatives">May's Conservatives</option>
+            <option value="Homophobic Foxhunter Conservatives">Homophobic Foxhunter Conservatives</option>
+            <option value="Corbyn's Labour">Corbyn's Labour</option>
+            <option value="Angela's Labour 2.0">Angela's Labour 2.0</option>
+            <option value="Liberal Democrats">Liberal Democrats</option>
+            <option value="Aaron's UKIP Far Right Party">Aaron's UKIP Far Right Party</option>            
+          </select>
+        </p>
+        <p>Who will you vote for: 
+          <select name="CANDIDATE" required>
+            <option value="">Please Select</option>
+            <option value="Teresa May">May</option>
+            <option value="Andrea Leadsom">Leadsom</option>
+            <option value="Jeremy Corbyn">Corbyn</option>
+            <option value="Angela Eagle">Eagle</option>
+          </select>
+        </p>        
+        <br>
+        <input type="submit" class='button'>        
+      </form>
+    </div>
+  </div>
+  </BODY>
+</HTML>
+

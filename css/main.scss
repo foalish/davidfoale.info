@@ -1,0 +1,33 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+
+/*
+    Base
+*/
+@import "base/variables";
+
+
+/*
+    Third party
+*/
+@import "third-party/bootstrap";
+@import "third-party/fontawesome";
+@import "third-party/awesome-bootstrap-checkbox";
+@import "third-party/freelancer";
+@import "third-party/slick";
+
+
+/*
+    Layouts
+*/
+@import "layouts/post";
+
+
+/*
+    Components
+*/
+@import "components/syntax-highlighting";
+@import "components/theme";
+@import "components/timeline";

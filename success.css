@@ -1,0 +1,36 @@
+body
+{
+background-color:#478ae1;
+background-repeat:repeat-x;
+background-position:center top;
+}
+
+.backgrounds {
+  position: relative;
+  margin: auto;
+  border-style: solid;
+   border-color: red;
+   padding: 1% 1% 1% 1%; /*top right bottom left */
+  /*background-image:url(images/background.png); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #4d4d4d;
+  max-width: 1345px;
+  background-position: top; 
+  vertical-align: text-top;   
+  height: auto;
+} 
+
+.main-content {
+   position:relative; 
+   border-style: solid;
+  border-color:red;
+  background-color:rgba(0, 0, 0, 0.8);
+  height: auto;
+  text-align: center;
+  color: #70dd61;
+  font-size: 150%;
+  padding: 5px 5px 5px 5px;
+}
+
+

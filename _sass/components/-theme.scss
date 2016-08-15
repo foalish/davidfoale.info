@@ -1,0 +1,271 @@
+/*
+    Theme
+    Overrides parts of the freelancer theme
+ */
+
+
+.main-image {
+
+    @extend .img-circle;
+    @extend .img-thumbnail;
+
+    max: {
+        width: 264px;
+    }
+    background: {
+        //color: transparent;
+    }
+    border: 4px solid $main-color-dark;
+
+}
+
+.blog {
+
+    &.container {
+
+        max: {
+            width: 800px;
+        }
+
+    }
+
+    .header {
+
+        padding: {
+            top: ($navbar-height) * 2;
+        }
+
+        h1 {
+            color: $main-color;
+        }
+
+        .image {
+
+            img {
+                margin: 0 auto;
+            }
+
+        }
+
+        .post-date {
+            color: $medium-grey;
+        }
+
+    }
+
+    .content {
+
+        p, ul, ol, dl {
+            margin: 1.6em 0;
+        }
+
+        font-size: 1.8rem;
+        line-height: 1.6em;
+
+        padding: {
+            bottom: $navbar-height;
+        }
+
+        table {
+            @extend .table;
+            @extend .table-hover;
+            @extend .table-condensed;
+        }
+
+    }
+
+}
+
+.post-excerpt {
+
+    margin: {
+        top: 50px;
+        bottom: 50px;
+    }
+
+    .image {
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    .author {
+        color: $medium-grey;
+    }
+
+}
+
+.pager {
+
+    .active {
+
+        a {
+
+            cursor: default !important;
+            border: {
+                color: $main-color-dark !important;
+            }
+            background: {
+                color: $main-color-dark !important;
+            }
+            color: $white !important;
+
+        }
+
+    }
+
+}
+
+#work {
+
+    .logos {
+
+        .row {
+
+            &:first-of-type {
+
+                .brand {
+                    border-top-width: 1px;
+                }
+
+            }
+
+            .brand {
+
+                @extend .col-sm-2;
+
+                &:first-of-type {
+                    @extend .col-sm-offset-1;
+                }
+
+                img {
+
+                    margin: 25px auto;
+                    max: {
+                        height: 125px;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+.fa-map-marker {
+    color: $red;
+}
+
+.recommendations-list {
+
+    .recommendation {
+
+        @extend .clearfix;
+
+        margin: {
+            bottom: 25px;
+        }
+
+        .img {
+
+            @extend .col-md-2;
+
+            img {
+
+                @extend .img-rounded;
+
+                width: 200px;
+                margin: 0 auto 10px;
+
+            }
+
+        }
+
+        .details {
+
+            @extend .col-md-10;
+
+            .quote_icon {
+
+                @extend .fa;
+                @extend .fa-quote-left;
+                @extend .fa-2x;
+
+            }
+
+            .quote {
+
+                margin: {
+                    top: 10px;
+                    bottom: 10px;
+                }
+                font: {
+                    size: 1.5em;
+                }
+
+            }
+
+            .who {
+
+                @extend .text-right;
+
+            }
+
+        }
+
+    }
+
+}
+
+
+#contact {
+
+    position: relative;
+
+    #gmap_canvas {
+        height: 400px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+    }
+
+    .padder {
+        @media (min-width: $screen-sm-min) {
+            margin: {
+                top: 325px;
+            }
+        }
+    }
+
+    h3 {
+        color: $black;
+    }
+
+}
+
+#about {
+
+    .skill {
+
+        @extend .col-sm-2;
+
+        &:first-of-type {
+            @extend .col-sm-offset-1;
+        }
+
+        img {
+
+            max-height: 125px;
+            margin: 0 auto 25px;
+
+        }
+
+    }
+
+}
