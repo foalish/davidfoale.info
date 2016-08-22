@@ -201,6 +201,20 @@
 {
 	width: 100%;
 }
+
+.text-on-the-right > * {
+    float:left;
+    margin-right:5px;
+}
+img {
+    float: left;
+   border-radius:  5px;
+    padding: 10px 20px 0px 0px;
+}
+
+
+
+
 .fh-desc
 {
 	width: 80%;
@@ -292,7 +306,6 @@
 {
 	padding: 0px;
 }
-
 
 
 
@@ -554,13 +567,19 @@ figure.effect-Beauty:hover p {
 	color: #242424;
 }
 
-
-
-
-
+/*------------------------------------------/
+/-----------------Extras------------------/
+/------------------------------------------*/
+/*
+.list-inline
+{
+	border: 2px outset !important;
+	border-radius: 5px !important;
+}
+*/
 
 /*------------------------------------------/
-/-----------------Subscribe------------------/
+/-----------------???------------------/
 /------------------------------------------*/
 
 .subscribe-social
